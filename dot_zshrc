@@ -1,0 +1,17 @@
+# History & Navigation
+HISTFILE=~/.zsh_history
+HISTSIZE=10000
+SAVEHIST=10000
+setopt AUTO_CD
+setopt SHARE_HISTORY
+setopt HIST_IGNORE_DUPS
+
+# Aliases
+alias l='ls -lah'
+alias ls='ls --color=auto'
+
+# Completion (Fast & Quiet)
+autoload -Uz compinit
+compinit -u -C
+
+[[ -f ~/.zshrc.local ]] && source ~/.zshrc.local
