@@ -1,0 +1,41 @@
+" --- 2. THEME SETUP ---
+set termguicolors
+syntax enable
+
+" --- 3. THE 'NEOVIM' FEEL (Manual Config) ---
+set number             " Show current line number
+set relativenumber     " Show relative numbers for jumping (5j, 10k, etc.)
+set cursorline        " Highlight the line the cursor is on
+set scrolloff=8        " Keep 8 lines above/below cursor when scrolling
+set sidescrolloff=8
+set mouse=
+
+" Better Search
+set ignorecase         " Case insensitive search...
+set smartcase          " ...unless I use a capital letter
+set incsearch          " Show search results as I type
+
+" Better Indentation
+set expandtab          " Use spaces instead of tabs
+set shiftwidth=4
+set softtabstop=4
+set tabstop=4
+
+" --- 4. YOUR EXISTING BACKUP LOGIC ---
+source $VIMRUNTIME/defaults.vim
+if !has("vms")
+  set backup
+  set backupdir=/projects/Fabian_Rost/home_stuff/.vim/backup//
+  if has('persistent_undo')
+    set undofile
+    set undodir=/projects/Fabian_Rost/home_stuff/.vim/undo//
+  endif
+endif
+
+" --- 5. CURSOR & CLIPBOARD ---
+if &term =~ 'xterm\|tmux\|screen'
+  let &t_SI = "\e[6 q" 
+  let &t_EI = "\e[2 q" 
+endif
+set clipboard=unnamedplus
+
