@@ -9,7 +9,6 @@ setopt HIST_IGNORE_DUPS
 # Aliases
 alias l='ls -lah'
 alias ls='ls --color=auto'
-alias ta='tmux new-session -A -s main'
 
 # fuzzy ctrl r
 source <(fzf --zsh)
