@@ -1,3 +1,6 @@
+# PATH
+path+=($HOME/.local/bin)
+
 # History & Navigation
 HISTFILE=~/.zsh_history
 HISTSIZE=10000
