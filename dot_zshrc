@@ -10,6 +10,14 @@ setopt HIST_IGNORE_DUPS
 alias l='ls -lah'
 alias ls='ls --color=auto'
 
+# fuzzy ctrl r
+source <(fzf --zsh)
+
+# z
+eval "$(zoxide init zsh)"
+
+eval "$(starship init zsh)"
+
 # Completion
 autoload -Uz compinit
 compinit Z-C
