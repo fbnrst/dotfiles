@@ -25,4 +25,7 @@ eval "$(starship init zsh)"
 autoload -Uz compinit
 compinit Z-C
 
+# remove / from WORDCHARS to not delete full paths with delete word
+export WORDCHARS='*?_-.[]~=&;!#$%^(){}<>'
+
 [[ -f ~/.zshrc.local ]] && source ~/.zshrc.local
