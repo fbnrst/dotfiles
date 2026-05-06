@@ -1,14 +1,14 @@
-eval "$(starship init bash)"
-
-[ -f ~/.fzf.bash ] && source ~/.fzf.bash
-
-eval "$(zoxide init bash)"
-
 # User specific bin to PATH
 if ! [[ "$PATH" =~ "$HOME/.local/bin:$HOME/bin:" ]]; then
   PATH="$HOME/.local/bin:$HOME/bin:$PATH"
 fi
 export PATH
+
+eval "$(starship init bash)"
+
+[ -f ~/.fzf.bash ] && source ~/.fzf.bash
+
+eval "$(zoxide init bash)"
 
 [[ -f ~/.bashrc.local ]] && source ~/.bashrc.local
 
