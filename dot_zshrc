@@ -31,5 +31,8 @@ eval "$(pixi completion --shell zsh)"
 # remove / from WORDCHARS to not delete full paths with delete word
 export WORDCHARS='*?_-.[]~=&;!#$%^(){}<>'
 
+# https://github.com/zsh-users/zsh-autosuggestions/blob/master/INSTALL.md#manual-git-clone
+source ~/.zsh/zsh-autosuggestions/zsh-autosuggestions.zsh
+
 [[ -f ~/.zshrc.local ]] && source ~/.zshrc.local
 
