@@ -26,5 +26,4 @@ if &term =~ 'xterm\|tmux\|screen'
   let &t_SI = "\e[6 q" 
   let &t_EI = "\e[2 q" 
 endif
-set clipboard=unnamedplus
 
