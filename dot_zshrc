@@ -1,5 +1,6 @@
 # PATH
 path+=($HOME/.local/bin)
+path+=($HOME/.pixi/bin)
 
 # History & Navigation
 HISTFILE=~/.zsh_history
