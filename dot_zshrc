@@ -37,5 +37,8 @@ export WORDCHARS='*?_-.[]~=&;!#$%^(){}<>'
 # https://github.com/zsh-users/zsh-autosuggestions/blob/master/INSTALL.md#manual-git-clone
 source ~/.zsh/zsh-autosuggestions/zsh-autosuggestions.zsh
 
+# Default Editor
+export EDITOR=vim
+
 [[ -f ~/.zshrc.local ]] && source ~/.zshrc.local
 
