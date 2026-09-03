@@ -44,4 +44,3 @@ export EDITOR=vim
 bindkey -e
 
 [[ -f ~/.zshrc.local ]] && source ~/.zshrc.local
-

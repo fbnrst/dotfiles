@@ -11,4 +11,3 @@ eval "$(starship init bash)"
 eval "$(zoxide init bash)"
 
 [[ -f ~/.bashrc.local ]] && source ~/.bashrc.local
-

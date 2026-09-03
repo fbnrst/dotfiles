@@ -21,9 +21,8 @@ set shiftwidth=4
 set softtabstop=4
 set tabstop=4
 
-" CURSOR & CLIPBOARD 
+" CURSOR & CLIPBOARD
 if &term =~ 'xterm\|tmux\|screen'
-  let &t_SI = "\e[6 q" 
-  let &t_EI = "\e[2 q" 
+  let &t_SI = "\e[6 q"
+  let &t_EI = "\e[2 q"
 endif
-
