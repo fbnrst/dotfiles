@@ -40,5 +40,8 @@ source ~/.zsh/zsh-autosuggestions/zsh-autosuggestions.zsh
 # Default Editor
 export EDITOR=vim
 
+# Emacs mode
+bindkey -e
+
 [[ -f ~/.zshrc.local ]] && source ~/.zshrc.local
 
