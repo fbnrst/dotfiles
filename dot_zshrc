@@ -39,6 +39,9 @@ source ~/.zsh/zsh-autosuggestions/zsh-autosuggestions.zsh
 
 # Default Editor
 export EDITOR=vim
+export VISUAL="vim"
+
+[[ -f ~/.zshrc.local ]] && source ~/.zshrc.local
 
 # Emacs mode
 bindkey -e
