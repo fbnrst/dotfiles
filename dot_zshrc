@@ -50,3 +50,6 @@ bindkey -e
 export SQUEUE_FORMAT="%.18i %.9P %.20j %.8u %.2t %.10M %.6D %R"
 
 [[ -f ~/.zshrc.local ]] && source ~/.zshrc.local
+
+# opencode
+export PATH=/Users/rost/.opencode/bin:$PATH
